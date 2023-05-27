@@ -1,0 +1,112 @@
+body {
+    background-image: url('avatar.jpg');
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .signup-box {
+    width: 360px;
+    padding: 5px;
+    height:fit-content;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #131371;
+    font-weight: 3em;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  form {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  .message{
+    height: 200px;
+  }
+
+  .radio{
+    display: flex;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #131371;
+    border-radius: 5px;
+    outline: none;
+    font-size: 12px;
+    height: 20px;
+    margin-top: 20px;
+    
+  }
+  
+  label, #male, #female, #others{
+    display: inline-block;
+    margin: auto;
+    font-size: 0.85em;
+
+  }
+
+  select{
+    width: 313px;
+    border: 1px solid #131371;
+    color: grey;
+    border-radius: 5px;
+    outline: none;
+    font-size: 12px;
+    margin-top: 20px;
+    height: 40px;
+  }
+
+ button{
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #131371;
+    color: white;
+    font-size: 18px;
+  }
+button:hover{
+  transform: scale(1.1);
+}
+  .checkbox-group input[type="checkbox"] {
+    display: none;
+  }
+
+  .checkbox-group input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+
+  .checkbox-group input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #131371;
+    border-radius: 3px;
+  }
+
+  .checkbox-group input[type="checkbox"]:checked + label:before {
+    background-color: #131371;
+    border-color: #131371;
+  }
+
+  .checkbox-group a{
+    color: #131371;
+  }
+

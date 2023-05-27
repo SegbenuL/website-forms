@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up Form</title> 
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>
+
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h3>It's free and only takes a minute</h3>
+      <form> 
+        <!-- i ommitted my form labels just to go with a design that allow placeholders to inform the users on the needed input -->
+        <input type="text" id="fname" placeholder="First Name" required autofocus/>
+
+        <input type="text" id="lname" placeholder="Last Name" required/>
+
+        <input type="email" id="email" placeholder="Email" name="email" required/>
+
+        <input type="password" id="password" placeholder="Password" name="password" required/>
+
+        <input type="password" id="confirm-password" placeholder="Confirm Password" name="confirm-password" required/>
+
+        <input type="date" id="dob" name="birthday" required>
+
+        <p> <strong> Gender </strong> </p>
+        <div class="radio">
+          <!-- Gave similar names to my radio form so only one can be selected at a time -->
+        <input  id="male" type="radio" name="selection" required>
+        <label for="Male">Male</label>
+
+        <input  id="female" type="radio" name="selection" required >
+        <label for="Female">Female</label>
+
+        <input  id="others" type="radio" name="selection" required>
+        <label for="Others">Others</label>
+        </div>
+        
+        <select id="country" name="country" required>
+            <option value="">Select Country...</option>
+            <option value="Nigeria">Nigeria</option>            
+            <option value="Ghana">Ghana</option>
+            <option value="Usa">United States of America</option>
+            <option value="China">China</option>
+            <option value="india">India</option>
+            <option value="Uk">UK</option>
+          </select>
+
+         <textarea class="message" placeholder="Message" name="message" rows="4" required></textarea>
+
+         <div class="checkbox-group">
+            <input type="checkbox" id="terms" name="terms" value="accepted" required>
+            <label for="terms">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a></label>
+          </div>
+
+        <button>Sign Up</button>
+
+      </form>
+      
+    </div>
+    
+  </body>
+</html>
